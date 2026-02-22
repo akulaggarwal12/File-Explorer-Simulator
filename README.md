@@ -28,28 +28,32 @@ To compile and run this project, you will need:
    git clone https://github.com/akulaggarwal12/File-Explorer-Simulator.git
    ```
 
-2. Compiling the Project:  
+2. Compiling the Project:
 Depending on your operating system and setup, choose the compilation method that works best for you.
 
-**Option A: Terminal Compilation (Linux)** \n
+**Option A: Terminal Compilation (Linux)**
+
 Ensure you have Raylib installed system-wide, then run:
 ```bash
 g++ main.cpp -o file_explorer -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 ```
 
 **Option B: Terminal Compilation (Windows via MinGW)**
+
 Assuming you have the Raylib `include` and `lib` folders set up in your compiler path or project directory:
 ```bash
 g++ main.cpp -o file_explorer.exe -O2 -Wall -Wno-missing-braces -I include/ -L lib/ -lraylib -lopengl32 -lgdi32 -lwinmm
 ```
 
 **Option C: Terminal Compilation (macOS)**
+
 Using Clang with Raylib installed via Homebrew (`brew install raylib`):
 ` ` `bash
 clang++ main.cpp -o file_explorer -std=c++17 -I/opt/homebrew/include -L/opt/homebrew/lib -lraylib -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
 ` ` `
 
 **Option D: Using CMake (Recommended for Cross-Platform)**
+
 If you are using CMake to manage your build, run the following commands:
 ```bash
 mkdir build
