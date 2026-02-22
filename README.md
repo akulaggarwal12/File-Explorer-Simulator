@@ -33,15 +33,15 @@ Depending on your operating system and setup, choose the compilation method that
 
 **Option A: Terminal Compilation (Linux)**
 Ensure you have Raylib installed system-wide, then run:
-` ` `bash
+```bash
 g++ main.cpp -o file_explorer -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
-` ` `
+```
 
 **Option B: Terminal Compilation (Windows via MinGW)**
 Assuming you have the Raylib `include` and `lib` folders set up in your compiler path or project directory:
-` ` `bash
+```bash
 g++ main.cpp -o file_explorer.exe -O2 -Wall -Wno-missing-braces -I include/ -L lib/ -lraylib -lopengl32 -lgdi32 -lwinmm
-` ` `
+```
 
 **Option C: Terminal Compilation (macOS)**
 Using Clang with Raylib installed via Homebrew (`brew install raylib`):
@@ -51,19 +51,19 @@ clang++ main.cpp -o file_explorer -std=c++17 -I/opt/homebrew/include -L/opt/home
 
 **Option D: Using CMake (Recommended for Cross-Platform)**
 If you are using CMake to manage your build, run the following commands:
-` ` `bash
+```bash
 mkdir build
 cd build
 cmake ..
 make
-` ` `
+```
 3. Run the Application
 Once compiled successfully, execute the generated file from your terminal to launch the simulator.
 
 **On Linux or macOS:**
-` ` `bash
+```bash
 ./file_explorer
-` ` `
+```
 
 **On Windows:**
 ` ` `cmd
