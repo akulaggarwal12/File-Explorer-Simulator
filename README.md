@@ -1,20 +1,20 @@
 # Aether - File Explorer Simulator
 
-## 📌 About The Project
+## About The Project
 Aether is a visual, File Explorer Simulator built entirely in C/C++. Utilizing the Raylib library for rendering, this project provides a graphical user interface (GUI) to navigate and interact with file directories. It simulates a virtual file system environment where users can click on folder icons to open them, view their contents, and track their current path in real-time.
 
-## ✨ Features
+## Features
 * **Graphical Interface:** Built completely from scratch using Raylib.
 * **Interactive Directories:** Clickable folder icons that dynamically update the view to show internal contents.
 * **Path Tracking:** A live-updating address bar displaying the current directory path.
 * **Custom Assets:** Custom icons and fonts mapped to backend file structures.
 * **Pure C/C++ Backend:** Efficient file and directory handling using standard C++ libraries.
 
-## 🛠️ Built With
+## Built With
 * [C++](https://cplusplus.com/) - Core application logic and backend.
 * [Raylib](https://www.raylib.com/) - Rendering, window management, and input detection.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 To compile and run this project, you will need:
