@@ -23,15 +23,15 @@ To compile and run this project, you will need:
 * [CMake / Make] (Optional: specify your build system here)
 
 ### Installation & Compilation
-1. Clone the repository:
-   ` ` `bash
+1. Clone the repository:  
+   ```bash
    git clone https://github.com/akulaggarwal12/File-Explorer-Simulator.git
-   ` ` `
+   ```
 
-2. Compiling the Project
+2. Compiling the Project:  
 Depending on your operating system and setup, choose the compilation method that works best for you.
 
-**Option A: Terminal Compilation (Linux)**
+**Option A: Terminal Compilation (Linux)** \n
 Ensure you have Raylib installed system-wide, then run:
 ```bash
 g++ main.cpp -o file_explorer -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
