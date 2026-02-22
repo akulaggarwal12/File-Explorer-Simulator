@@ -40,6 +40,7 @@ Ensure you have Raylib installed system-wide, then run:
 g++ main.cpp -o file_explorer -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 ```
 
+
 **Option B: Terminal Compilation (Windows via MinGW)**
 
 Assuming you have the Raylib `include` and `lib` folders set up in your compiler path or project directory:
@@ -47,12 +48,14 @@ Assuming you have the Raylib `include` and `lib` folders set up in your compiler
 g++ main.cpp -o file_explorer.exe -O2 -Wall -Wno-missing-braces -I include/ -L lib/ -lraylib -lopengl32 -lgdi32 -lwinmm
 ```
 
+
 **Option C: Terminal Compilation (macOS)**
 
 Using Clang with Raylib installed via Homebrew (`brew install raylib`):
 ```bash
 clang++ main.cpp -o file_explorer -std=c++17 -I/opt/homebrew/include -L/opt/homebrew/lib -lraylib -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
 ```
+
 
 **Option D: Using CMake (Recommended for Cross-Platform)**
 
@@ -63,8 +66,11 @@ cd build
 cmake ..
 make
 ```
+
+
 3. Run the Application
 Once compiled successfully, execute the generated file from your terminal to launch the simulator.
+
 
 **On Linux or macOS:**
 ```bash
@@ -72,6 +78,6 @@ Once compiled successfully, execute the generated file from your terminal to lau
 ```
 
 **On Windows:**
-` ` `cmd
+```cmd
 file_explorer.exe
-` ` `
+```
